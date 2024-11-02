@@ -1,7 +1,0 @@
-
-ChronicleTextG1-Roman-Pro.otf
-
-MuseoSans-100.otf
-MuseoSans_500.otf
-MuseoSans_700.otf
-MuseoSans_900.otf
