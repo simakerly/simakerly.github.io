@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <script src="http://code.jquery.com/jquery-latest.js"></script>
+          <style>
+          body {
+            overflow-x:hidden;}
+          
+          .block {
+              position:relative;
+              background-color:#abc;
+              width:80%;
+              height:800px;
+              margin-left:-1500px;
+              border:5px solid black;
+                    }
+ 
+        </style>
+      
+    </head>
+    <body>
+         <button id="right">&raquo;</button>
+        <div class="block"></div>
+ 
+        <script>
+        $("#right").click(function(){
+          //$(".block").animate({"left": "+=1500px"}, "slow");
+          //
+          //
+        $(".block").animate({'left':'1700px','top':'10px'},  3000, function(){
+
+
+        });
+   
+
+
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>animacion 02</title>
+    <link rel="stylesheet" href="">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+#clouds {
+position:absolute;
+z-index:500;
+left:0px;
+top:10px;
+
+
+}
+    </style>
+    <script type="text/javascript">
+$(document).ready(function() {
+
+    function loop() {
+        $('#clouds').css({left:'10%'});
+        $('#clouds').animate ({
+            left: '+=1700',
+        }, 5000, 'linear', function() {
+            loop();
+        });
+    }
+        
+    loop();
+ });
+    </script>
+</head>
+<body>
+    <div id="clouds" style="border:1px solid red"><img border="0" alt="animated clouds" src="/images/clouds.png" /></div>
+    
+</body>
+</html>
